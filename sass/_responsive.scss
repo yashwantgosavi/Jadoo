@@ -1,0 +1,160 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+  }
+  h2 {
+    font-size: 3.5em !important;
+    text-align: center;
+  }
+  h3 {
+    font-size: 7vw;
+  }
+
+  // brandigsec
+  #brandingSec {
+    .col-12:nth-child(1) {
+      order: 2;
+    }
+
+    .col-12:nth-child(2) {
+      order: 1;
+    }
+
+    h5 {
+      font-size: 1rem;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+    .buttons .col-12 {
+      display: inline-block;
+      margin: auto;
+      text-align: center;
+    }
+    .a{
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+  }
+  .wrapper {
+    margin-top: 25rem;
+    // category
+    #category {
+      background-image: none;
+      .card {
+        margin: 2rem auto;
+      }
+      .cardrow {
+        margin-top: 3rem;
+      }
+    }
+    // top selling
+    #topSelling {
+      margin-top: 6rem;
+      background-position: 100% 95%;
+    
+    }
+    // easy and fast
+    #bookNextTrip {
+      .col-md-2 {
+        width: 100%;
+      }
+      li {
+        margin: 3rem auto;
+      }
+      .blurBg {
+        right: 9rem;
+      }
+    }
+    // Partners
+    #partner {
+      .logo-slider::before,
+      .logo-slider::after {
+        background: none;
+        height: 50px;
+      }
+    }
+    // newsLetter
+    #newsLetter {
+      .container {
+        margin: 5rem auto;
+        h4 {
+          line-height: 2rem;
+          font-size: 5.4vw;
+        }
+
+        input {
+          margin-bottom: 3rem;
+          margin-left: -1rem;
+          max-width: 100%;
+        }
+      }
+    }
+    // footer
+    footer {
+      h1 {
+        font-size: 10vw;
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      table {
+        margin: 5rem 0px 5rem 2%;
+      }
+      .socialMedia {
+        margin:auto;
+        p {
+          margin: 0px auto;
+        }
+      }
+      .blurBg {
+        z-index: -1;
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// mobile to laptop
+@media (max-width: 1280px) {
+  nav .container {
+    max-width: 100vw;
+    margin: 1rem auto;
+  }
+
+  #navbarSupportedContent {
+    background-color: $white;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+    button {
+      margin: 1rem 0px 1rem 2rem;
+    }
+  }
+
+  ul {
+    li {
+      margin: 1% 0px;
+    }
+  }
+}

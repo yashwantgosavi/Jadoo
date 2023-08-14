@@ -1,0 +1,58 @@
+footer {
+  padding-top: 2%;
+
+  h1 {
+    font-size: 2.5vw;
+    font-weight: 500;
+    color: $persianBlue;
+  }
+
+  a {
+    color: $textColor;
+  }
+
+  b {
+    color: $black;
+  }
+  .blurBg {
+    right: -2rem;
+    bottom: 0;
+    background-color: $lightpink;
+    @include blurBg;
+  }
+
+  .socialMedia {
+    p {
+      font-size: 20px;
+    }
+
+    i {
+      background-color: $white;
+      color: $black;
+      padding: 1rem;
+      border-radius: 25px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      &:hover {
+        background-image: url(../media/socialMediaBg.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        object-fit: fill;
+        color: $white;
+      }
+    }
+  }
+
+  td {
+    padding: 0.5rem 0px;
+  }
+
+  th,
+  h1 {
+    padding-bottom: 1.5rem;
+  }
+
+  .blurBg {
+    background-color: $lightpink;
+  }
+}

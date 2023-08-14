@@ -1,0 +1,26 @@
+nav {
+  height: 80px;
+  position: fixed !important;
+  top: 0;
+  width: 100vw;
+  padding: 3% 0px;
+  z-index: 1000;
+  ul {
+    li {
+      margin: 0px 2rem;
+    }
+  }
+  button {
+     outline: $outline;
+  }
+  a{
+    color: $navtext !important;
+  }
+}
+
+.glass {
+  backdrop-filter: blur(10px);
+  transition: all .5s;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  border-bottom: 1px solid $white;
+}

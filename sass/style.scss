@@ -1,0 +1,32 @@
+// subpages
+@import "colors";
+@import "commonStyles";
+@import "fonts";
+@import "interaction";
+@import "nav";
+@import "index";
+@import "footer";
+@import "responsive";
+
+// ===================== css guide =============================
+/*
+**Fonts
+    h1: logo
+    h2: branding section heading
+    h3: section heading
+    h4: Newletter
+    h5: section subHeading
+    h6: containt heading
+
+
+#ID : All id set in as per section order.
+    nav
+    #brandingSec
+    #category
+    #topSelling
+    #bookNextTrip
+    #testimonials
+    #partner
+    #newsLetter
+    footer
+*/

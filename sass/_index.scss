@@ -1,0 +1,250 @@
+#category,
+#topSelling {
+  hgroup {
+    text-align: center;
+  }
+}
+
+// branding Section
+#brandingSec {
+  height: 100vh;
+  background-image: url(../media/Decore.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+
+  h5 {
+    font-weight: bold;
+    color: $orange;
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+  }
+
+  p {
+    line-height: 2rem;
+    color: $persianBlue;
+
+    &:last-child {
+      width: fit-content;
+    }
+  }
+
+  .container {
+    padding-top: 9rem;
+  }
+
+  .blurBg {
+    @include blurBg;
+    background-color: $lightpink;
+    left: -3%;
+    top: 8%;
+  }
+
+  .buttons {
+    align-items: center;
+
+    .row {
+      align-items: center;
+    }
+
+    a {
+      &:first-child {
+        @include playButton;
+      }
+
+      &:last-child {
+        @include orangeBtn;
+      }
+    }
+  }
+}
+
+// Category
+#category {
+  position: relative;
+  text-align: center;
+  background-image: url(../media/plusMarkTexture.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  margin-top: 5rem;
+
+  .col-12 {
+    position: relative;
+  }
+
+  .orangePatch {
+    position: absolute;
+    bottom: 17%;
+    left: -3%;
+    width: 6rem;
+    height: 6rem;
+    background-color: $orange;
+    z-index: -1;
+    border-radius: 25px 0px 10px 0px;
+    display: none;
+  }
+
+  .card {
+    border-radius: 36px;
+    position: relative;
+    border: none;
+    margin: 8rem 0px;
+    padding: 2rem 0px;
+    z-index: 10;
+
+    &:hover {
+      @include hoverShadow;
+    }
+
+    img {
+      max-width: 100px;
+      margin: 2rem auto;
+    }
+
+    h6 {
+      margin: 1rem 0px;
+    }
+  }
+}
+
+@mixin cardImg {
+  background-size: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-radius: 25px 25px 0px 0px;
+}
+
+// top Selling
+#topSelling {
+  background-image: url(../media/spring.png);
+  background-repeat: no-repeat;
+  background-position: 91% 70%;
+  object-fit: cover;
+
+  .img-div {
+    background-image: url(../media/rome.png);
+    @include cardImg();
+    background-position: 50% 17%;
+    background-size: 105%;
+  }
+
+  .img-div-ii {
+    background-image: url(../media/london.png);
+    @include cardImg();
+    background-size: 110%;
+    background-position: 50% 25%;
+  }
+
+  .img-div-iii {
+    background-image: url(../media/europe.png);
+    @include cardImg();
+    background-size: 125%;
+    background-position: 50% 22%;
+  }
+
+
+  .img-div,
+  .img-div-ii,
+  .img-div-iii {
+    height: 20rem;
+  }
+
+  .card {
+    border-radius: 25px;
+    margin: 20% 0px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+    span {
+      text-align: right;
+    }
+
+    p {
+      font-weight: 600;
+    }
+
+    .card-text {
+      margin-top: 4%;
+      font-weight: 400;
+
+      i {
+        color: $persianBlue;
+        margin-right: 2%;
+      }
+    }
+
+    .card-body {
+      padding: 1.5rem;
+    }
+  }
+}
+
+// book your next trip
+#bookNextTrip {
+  margin: 10rem auto;
+
+  h5 {
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+
+  li {
+    margin: 5% 0px;
+  }
+
+  .col-md-2 {
+    width: 9.5%;
+  }
+
+  .blurBg {
+    @include blurBg;
+    background-color: $turquise;
+    z-index: -1;
+    right: 14rem;
+    top: 3rem;
+  }
+
+}
+
+// latest new and updates
+#newsLetter {
+  background-image: url(../media/plusMarkTexture2.png);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+
+  .container {
+    margin: $sectionMargin-y;
+    background-color: $light4;
+    padding: $sectionPadding-y;
+    border-radius: 100px 15px 15px 15px;
+  }
+
+  h4 {
+    line-height: 3rem;
+  }
+
+  .orangeBtn {
+    @include orangeBtn;
+  }
+
+  input {
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .sendBtn {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    font-size: 1.5rem;
+    background: $voiletGradient;
+    border-radius: 50%;
+    color: $white;
+    padding: 1.5rem;
+  }
+
+}
+
+.wrapper {
+  margin: 0px 2rem;
+}

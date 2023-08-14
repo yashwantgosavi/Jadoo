@@ -1,0 +1,148 @@
+// Fadein on mouse scroll
+h1 {
+  -webkit-animation: slideIn 0.75s ease forwards;
+  animation: slideIn 0.75s ease forwards;
+}
+
+/* Animations */
+p,
+li,
+a,
+img,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+address,
+footer,
+ul,
+button {
+  opacity: 0;
+
+  .col {
+    font-size: 14px;
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 10px;
+  }
+}
+
+.slideIn {
+  -webkit-animation: slideInAnimation 0.6s ease 0.25s forwards;
+  animation: slideInAnimation 0.6s ease 0.25s forwards;
+}
+
+@-webkit-keyframes slideInAnimation {
+  0% {
+    -webkit-transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInAnimation {
+  0% {
+    -webkit-transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Logo Slider */
+.logo-slider {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  div {
+    opacity: 1 !important;
+  }
+
+  .logo-slide-track {
+    -webkit-animation: logo-scroll 60s linear infinite;
+    animation: logo-scroll 60s linear infinite;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: calc(250px * 18);
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+  }
+
+  .slide {
+    height: 80px;
+    width: fit-content;
+    padding: 20px;
+    margin: auto 2rem;
+    background-color: $white;
+
+    &:hover {
+      box-shadow: $shadow;
+      border-radius: 12px;
+      transition: $transition;
+    }
+
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+  }
+
+  &::before,
+  &::after {
+    background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 175px;
+    position: absolute;
+    width: 300px;
+    z-index: 2;
+  }
+
+
+  @-webkit-keyframes logo-scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+
+  @keyframes logo-scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+}

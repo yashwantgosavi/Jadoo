@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+$heading: 'Volkhov', serif;
+$containt: 'Poppins', sans-serif;
+
+h1,h2,h3,h4,h5,h6{
+  line-height: 1;
+}
+h2,
+h3 {
+  font-family: $heading !important;
+  color: $persianBlue;
+}
+
+
+h4 {
+  font-family: $containt;
+  color: $voiletGrey;
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+
+h5 {
+  font-family: $containt;
+  text-transform: uppercase;
+  color: $voiletGrey;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+h6 {
+  color: $persianBlue;
+  font-family: $containt;
+  font-size: 20px;
+}
+
+// Font Sizes
+h2 {
+  font-size: 5.5em !important;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 3vw;
+}
+
+
+body {
+  font-family: $containt;
+}
